@@ -8,3 +8,5 @@
   * [迭代器与生成器](chapter/2019/Iteratorandgenerator.md)
   * [原型与原型链和继承](chapter/2019/prototype.md)
   * [函数防抖与函数节流](chapter/2019/debounceandthrottle.md)
+* [其他](chapter/CHAPTERCOMM.md)
+  * [资源推荐](chapter/RECOMMEND.md)
