@@ -114,3 +114,51 @@ console.log(add.call(obj, 3, 4)); // 10
 console.log(add.mycall(obj, 3, 4)); // 10
 console.log(add.myapply(obj, [3, 4])); // 10
 ```
+
+## 常见应用场景
+
+### 合并两个数组
+
+```bash
+var arr1 = ['1', '2'];
+var arr2 = ['3', '4'];
+
+// 将第二个数组融合进第一个数组
+// 相当于 arr1.push('3', '4');
+[].push.apply(arr1, arr2);
+
+console.log(arr1);
+// ['1', '2', '3', '4']
+```
+
+需要注意的是 js引擎对函数参数有最大限制，JS核心限制在 65535，有些引擎会抛出异常，有些不抛出异常但丢失多余参数。
+
+### 获取数组中的最大值或最小值
+
+```bash
+var arr = [1, 120, 35, -100];
+Math.max.apply(Math, arr); //120
+
+// ES6
+Math.max.call(Math, ...arr); // -100
+```
+
+### 类数组对象转数组
+
+```bash
+let arr = [].slice.call(arguments);
+
+// ES6:
+let arr = Array.from(arguments);
+let arr = [...arguments];
+```
+
+类数组对象：
+
+* 类数组对象是一个对象
+* 具有指向对象元素的数字索引下标和 length 属性
+* arguments 对象，还有DOM API 返回的 NodeList 对象都属于类数组对象
+
+为什么要有类数组对象呢?
+
+* 对象通过属性访问数据的时间复杂度是 O(1) 所以可以更快的操作复杂数据
