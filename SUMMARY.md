@@ -11,3 +11,4 @@
   * [性能优化需要知道的基础知识(HTTP)](chapter/2019/http.md)
 * [其他](chapter/CHAPTERCOMM.md)
   * [资源推荐](chapter/RECOMMEND.md)
+  * [DNS、Host、VPN和科学上网](chapter/miscellany/dns&host&vps.md)
