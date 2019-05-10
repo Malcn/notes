@@ -9,6 +9,8 @@
   * [原型与原型链和继承](chapter/2019/prototype.md)
   * [函数防抖与函数节流](chapter/2019/debounceandthrottle.md)
   * [性能优化需要知道的基础知识(HTTP)](chapter/2019/http.md)
+  * [函数柯里化与反柯里化](chapter/2019/currying.md)
 * [其他](chapter/CHAPTERCOMM.md)
   * [资源推荐](chapter/RECOMMEND.md)
   * [DNS、Host、VPN和科学上网](chapter/miscellany/dns&host&vps.md)
+  * [脱坑手册](chapter/miscellany/index.md)

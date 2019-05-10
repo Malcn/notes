@@ -18,11 +18,11 @@ VPN （Virtual Private Network），虚拟专用网。举个栗子：如果一�
 
 ### SS搭建
 
-* `wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh`
+1. `wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh`
 
-* `chmod +x shadowsocks.sh`
+2. `chmod +x shadowsocks.sh`
 
-* `./shadowsocks.sh 2>&1 | tee shadowsocks.log`
+3. `./shadowsocks.sh 2>&1 | tee shadowsocks.log`
 
 > 稍等片刻之后，按照提示依次输入密码-确认密码-输入端口号-确认端口号，选择加密方式-回车确认。加密方式我们一定要选择【7】，如果你的苹果设备想实现科学上网的话。
 
