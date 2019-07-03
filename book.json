@@ -1,3 +1,33 @@
 {
-    "plugins": ["chapter-fold", "code", "-lunr", "-search", "search-pro", "pageview-count"]
+  "author": "Malcn",
+  "description": "...",
+  "extension": null,
+  "generator": "site",
+  "title": "GitBook",
+  "plugins": [
+    "github",
+    "include-codeblock",
+    "chapter-fold",
+    "copy-code-button",
+    "-lunr",
+    "-search",
+    "search-pro",
+    "back-to-top-button",
+    "prism",
+    "-highlight",
+    "advanced-emoji",
+    "emphasize",
+    "baidu"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/malcn"
+    },
+    "prism": {
+      "css": ["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]
+    },
+    "baidu": {
+      "token": "afd1050b02a19809868538ab1fce9c82"
+    }
+  }
 }
